@@ -1,37 +1,47 @@
+import type React from "react";
 
-interface StatItem {
-    value: string;
-    label: string;
-}
+type BorderSides = [left: number, top: number, right: number, bottom: number];
 
 interface FrameImageProps {
     imageUrl?: string | null;
-    stats?: StatItem[];
+    imageHeight?: string;
+    className?: string;
+    children?: React.ReactNode;
+    border?: BorderSides;
 }
 
-function FrameImage({ imageUrl = null, stats = [] }: FrameImageProps) {
+function FrameImage({
+    imageUrl = null,
+    imageHeight = "h-100",
+    className = "",
+    children,
+    border = [2, 2, 6, 6],
+}: FrameImageProps) {
+    const [left, top, right, bottom] = border;
+
     return (
-        <div className="w-full mt-10 border-2 border-r-[6px] border-b-[6px] border-black rounded-sm overflow-hidden">
-            {/* Image */}
+        <div
+            className={`w-full rounded-sm overflow-hidden ${className}`}
+            style={{
+                borderStyle: "solid",
+                borderColor: "black",
+                borderLeftWidth: left,
+                borderTopWidth: top,
+                borderRightWidth: right,
+                borderBottomWidth: bottom,
+            }}
+        >
             {imageUrl ? (
                 <img
                     src={imageUrl}
                     alt="image-url"
-                    className="w-full h-100 object-cover"
+                    className={`w-full ${imageHeight} object-cover`}
                 />
             ) : (
-                <div className="w-full h-100 bg-gray-100" />
+                <div className={`w-full ${imageHeight} bg-gray-100`} />
             )}
 
-            {/* Stats Bar */}
-            <div className="w-full grid grid-cols-3 divide-x divide-black border-t-2 border-black">
-                {stats.map((stat) => (
-                    <div key={stat.label} className="flex flex-col items-center py-6">
-                        <span className="text-2xl font-extrabold">{stat.value}</span>
-                        <span className="text-sm text-gray-500">{stat.label}</span>
-                    </div>
-                ))}
-            </div>
+            {children}
         </div>
     );
 }
