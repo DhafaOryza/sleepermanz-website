@@ -1,6 +1,6 @@
 
-import Barier from "./etc/Barier";
-import SkillsCard from "./etc/SkillsCard";
+import Barier from "../../etc/Barier";
+import SkillsCard from "../../etc/SkillsCard";
 
 const skills = [
     {

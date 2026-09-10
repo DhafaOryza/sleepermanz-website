@@ -2,8 +2,8 @@ import StylizedButton from "./etc/Buttons/StylizedButtons";
 
 export default function Navbar() {
     const navlinks = [
-        { label: "HOME", href: "#" },
-        { label: "PORTOFOLIO", href: "#" },
+        { label: "HOME", href: "/home" },
+        { label: "PORTOFOLIO", href: "/portofolio" },
         { label: "SERVICES", href: "#" },
     ]
 

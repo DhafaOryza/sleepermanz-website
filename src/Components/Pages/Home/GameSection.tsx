@@ -6,8 +6,8 @@
 */
 
 
-import Barier from "./etc/Barier";
-import GameCard from "./etc/GameCard";
+import Barier from "../../etc/Barier";
+import GameCard from "../../etc/GameCard";
 
 const games: React.ComponentProps<typeof GameCard>[] = [
     {

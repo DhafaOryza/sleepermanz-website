@@ -1,7 +1,7 @@
 
-import Barier from "./etc/Barier";
-import CapabilityGroup from "./etc/CapabilityGroup";
-import ToolsBar from "./etc/Tools/ToolsBar";
+import Barier from "../../etc/Barier";
+import CapabilityGroup from "../../etc/CapabilityGroup";
+import ToolsBar from "../../etc/Tools/ToolsBar";
 
 const capabilityGroups = [
     {

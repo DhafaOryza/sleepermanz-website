@@ -1,5 +1,5 @@
-import Barier from "./etc/Barier";
-import TeamMemberCard, { type TeamMemberCardProps } from "./etc/TeamMemberCard";
+import Barier from "../../etc/Barier";
+import TeamMemberCard, { type TeamMemberCardProps } from "../../etc/TeamMemberCard";
 
 const teamMembers: TeamMemberCardProps[] = [
     { name: "NAI", role: "Team Lead", photo: "/team/nai.png" },

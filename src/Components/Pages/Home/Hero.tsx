@@ -1,5 +1,5 @@
-import Barier from "./etc/Barier";
-import FrameImage from "./etc/FrameImage";
+import Barier from "../../etc/Barier";
+import FrameImage from "../../etc/FrameImage";
 
 export default function Hero() {
     const imageUrl = "/hero-image.png";

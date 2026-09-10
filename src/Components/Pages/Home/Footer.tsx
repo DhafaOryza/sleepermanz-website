@@ -1,4 +1,4 @@
-import Barier from "./etc/Barier";
+import Barier from "../../etc/Barier";
 
 const navLinks = ["Home", "Portofolio", "Services", "Careers"];
 

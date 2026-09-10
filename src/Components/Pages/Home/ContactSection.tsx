@@ -1,5 +1,5 @@
-import Barier from "./etc/Barier";
-import SocialIcon from "./etc/Icons/SocialIcon";
+import Barier from "../../etc/Barier";
+import SocialIcon from "../../etc/Icons/SocialIcon";
 
 const socials = [
     { type: "youtube", href: "https://youtube.com/@sleepermanz", boxed: true },
