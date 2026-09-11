@@ -13,7 +13,7 @@ export const categories: Category[] = [
 ];
 
 // TODO: ganti dengan data asli (dari CMS/API/array assets), ini cuma contoh biar pagination-nya kelihatan jalan
-export const PORTFOLIO_ITEMS: PortfolioItem[] = Array.from({ length: 14 }, (_, i) => ({
+export const PORTFOLIO_ITEMS: PortfolioItem[] = Array.from({ length: 9 }, (_, i) => ({
     id: `concept-art-${i + 1}`,
     category: "concept-art",
     title: `Concept Art ${i + 1}`,
