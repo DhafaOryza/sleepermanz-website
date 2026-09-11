@@ -1,4 +1,3 @@
-
 import Barier from "../../etc/Barier";
 
 export default function HeroPortofolio() {
@@ -11,6 +10,12 @@ export default function HeroPortofolio() {
                     Our Work
                 </h1>
                 <Barier width="full" height="2" className="flex-1" />
+            </div>
+
+            {/* Subtitle */}
+            <div className="max-w-xl text-center mt-4">
+                <p>A bunch of things we've made along the way.</p>
+                <p>Games, art, animation, and experiments from our studio.</p>
             </div>
         </div>
     );
