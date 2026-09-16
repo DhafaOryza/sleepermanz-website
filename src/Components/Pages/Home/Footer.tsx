@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 import Barier from "../../etc/Barier";
 
-const navLinks = ["Home", "Portofolio", "Services", "Careers"];
+const navLinks = [
+    { label: "Home", href: "/home" },
+    { label: "Portofolio", href: "/portofolio" },
+    { label: "Services", href: "/services" },
+    { label: "Careers", href: "/careers" },
+];
 
 export default function Footer() {
     return (
@@ -22,13 +28,13 @@ export default function Footer() {
                 {/* Nav */}
                 <nav className="flex flex-row gap-10">
                     {navLinks.map((link) => (
-                        <a
-                            key={link}
-                            href={`#${link.toLowerCase()}`}
+                        <Link
+                            key={link.label}
+                            to={link.href}
                             className="font-bold uppercase text-sm hover:opacity-70 transition-opacity"
                         >
-                            {link}
-                        </a>
+                            {link.label}
+                        </Link>
                     ))}
                 </nav>
             </div>
