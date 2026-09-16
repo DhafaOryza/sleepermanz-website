@@ -4,7 +4,7 @@ export default function Navbar() {
     const navlinks = [
         { label: "HOME", href: "/home" },
         { label: "PORTOFOLIO", href: "/portofolio" },
-        { label: "SERVICES", href: "#" },
+        { label: "SERVICES", href: "/services" },
     ]
 
     return (

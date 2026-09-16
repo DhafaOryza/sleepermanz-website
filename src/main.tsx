@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import HomePage from './Components/Pages/HomePage.tsx'
 import PortofolioPage from './Components/Pages/PortofolioPage.tsx'
+import ServicesPage from "./Components/Pages/ServicesPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Navigate to={"/home"} replace /> },
       { path: "home", element: <HomePage /> },
-      { path: "portofolio", element: <PortofolioPage /> }
+      { path: "portofolio", element: <PortofolioPage /> },
+      { path: "services", element: <ServicesPage/>}
     ]
   }
 ]);
